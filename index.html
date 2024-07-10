@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Code Documentation</header>
+      <a class="nav-link" href="#Intro">Intro</a>
+      <a class="nav-link" href="#The_Basis_of_code">The Basis of Code</a>
+      <a class="nav-link" href="#Intermediate">Intermediate</a>
+      <a class="nav-link" href="#Advanced">Advanced</a>
+      <a class="nav-link" href="#Final">Final</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Intro">
+  <header>Intro</header>
+  <p>This technical documentation page provides an overview of fundamental coding concepts, intermediate practices, advanced techniques, and final considerations for developing robust and efficient code.</p>
+  <p>Whether you're a beginner or an experienced developer, this guide aims to enhance your understanding and improve your coding skills.</p>
+  <code>
+  // Basic Hello World program in JavaScript
+    console.log('Hello, World!');
+  </code>
+  <li>Simple Hello World program in JavaScript</li>
+</section>
+
+
+      <section class="main-section" id="The_Basis_of_code">
+        <header>The Basis of Code</header>
+        <p>Understanding the basic building blocks of code is essential for any programmer. These include variables, data types, operators, control structures, and functions.</p>
+        <p>Variables are used to store data, data types define the kind of data, operators perform operations on data, control structures dictate the flow of the program, and functions encapsulate reusable code blocks.</p>
+        <code>
+          // Example of a function in JavaScript
+          function greet(name) {
+            return 'Hello, ' + name + '!';
+          }
+        </code>
+        <li>Variables and Data Types</li>
+        <li>Operators and Control Structures</li>
+        <li>Functions and Scope</li>
+      </section>
+
+      <section class="main-section" id="Intermediate">
+        <header>Intermediate</header>
+        <p>Intermediate coding concepts build on the basics and introduce more complexity. These include arrays, objects, higher-order functions, and asynchronous programming.</p>
+        <p>Arrays and objects allow for more complex data storage, higher-order functions enable more abstract programming, and asynchronous programming is crucial for handling operations that take time, such as API calls.</p>
+        <code>
+          // Example of an asynchronous function in JavaScript using Promises
+          function fetchData(url) {
+            return fetch(url)
+              .then(response => response.json())
+              .then(data => console.log(data))
+              .catch(error => console.error('Error fetching data:', error));
+          }
+        </code>
+        <li>Arrays and Objects</li>
+        <li>Higher-Order Functions</li>
+        <li>Asynchronous Programming</li>
+      </section>
+
+      <section class="main-section" id="Advanced">
+        <header>Advanced</header>
+        <p>Advanced coding techniques involve more sophisticated concepts such as design patterns, algorithms and data structures, optimization, and memory management.</p>
+        <p>Mastering these techniques allows developers to write more efficient, maintainable, and scalable code. Understanding design patterns helps in solving common problems, and optimizing algorithms ensures better performance.</p>
+        <code>
+          // Example of a class in JavaScript using ES6 syntax
+          class Person {
+            constructor(name, age) {
+              this.name = name;
+              this.age = age;
+            }
+          
+            greet() {
+              console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+            }
+          }
+        </code>
+        <li>Design Patterns</li>
+        <li>Algorithms and Data Structures</li>
+        <li>Code Optimization</li>
+      </section>
+
+      <section class="main-section" id="Final">
+        <header>Final</header>
+        <p>The final considerations in coding involve testing, debugging, and documentation. These are crucial for ensuring that code is reliable, maintainable, and understandable.</p>
+        <p>Testing verifies that code works as expected, debugging identifies and fixes errors, and documentation provides a reference for future developers or users of the code.</p>
+        <code>
+          // Example of a simple unit test in JavaScript using Jest
+          test('adds 1 + 2 to equal 3', () => {
+            expect(1 + 2).toBe(3);
+          });
+        </code>
+        <li>Testing and Debugging</li>
+        <li>Code Review and Refactoring</li>
+        <li>Documentation</li>
+      </section>
+    </main>
+  </body>
+</html>
+

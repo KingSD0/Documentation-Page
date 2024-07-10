@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #87cefa;
+    /* Light blue background */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar header {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline;
+}
+
+.nav-link {
+    display: block;
+    color: #4682b4;
+    /* Steel blue links */
+    margin: 20px 0;
+    /* Increased margin for more space between links */
+    text-decoration: none;
+    font-size: 1.2em;
+    /* Increased font size for larger text */
+}
+
+.nav-link:hover {
+    color: #4169e1;
+    /* Royal blue on hover */
+    text-decoration: underline;
+}
+
+#main-doc {
+    margin-left: 220px;
+    /* Width of the navbar + some padding */
+    padding: 20px;
+    background-color: #f0f8ff;
+    /* Alice blue background */
+    flex-grow: 1;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    font-size: 1.5em;
+    color: #4682b4;
+    /* Steel blue section headers */
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: #e0ffff;
+    /* Light cyan background */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: 220%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+        /* Adjusted margin for smaller screens */
+        font-size: 1em;
+        /* Adjusted font size for smaller screens */
+    }
+}
